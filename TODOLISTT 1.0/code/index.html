@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Reminders App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <h2>📋 My Reminders</h2>
+    <input type="text" id="taskInput" placeholder="Task name..."/>
+    <input type="datetime-local" id="timeInput"/>
+    <button class="btn" onclick="addTask()">Add Task</button>
+
+    <div class="tabs">
+      <button onclick="filterTasks('all')" class="active">All</button>
+      <button onclick="filterTasks('delayed')">Delayed</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
